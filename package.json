@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo > hello",
-    "dev": "npx nodemon"
+    "dev": "npx nodemon",
+    "start": "node app.js"
   },
   "author": "Priyanshu Kumar",
   "license": "MIT",
