@@ -5,6 +5,9 @@ const upload = require("../config/multer.config");
 const fileModel = require("../models/files.models");
 const firebase = require("../config/firebase.config");
 
+router.get('/',(req,res)=>{
+  res.redirect('home');
+});
 router.get("/home", authMidddleWare, async (req, res) => {
   const userFiles = await fileModel.find({ user: req.user.userId });
   res.render("home", {

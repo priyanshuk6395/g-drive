@@ -5,10 +5,6 @@ const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-app.get('/',(req,res)=>{
-  res.render('home');
-})
-
 router.get("/register", (req, res) => {
   res.render("register");
 });
